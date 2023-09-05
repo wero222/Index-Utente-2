@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Registrazione Utente</title>
+	</head>
+	<body>
+		<form action="" method="post">
+			<input type="text" name="nome" placeholder="inserire nome">
+			<br>
+			<input type="text" name="username" placeholder="inserire username">
+			<br>
+			<input type="password" name="password" placeholder="inserire password">
+			<br>
+			<input type="submit" value="Registra Utente">
+		</form>
+		<p th:if="${errore}">Errore di compilazione</p>
+	</body>
+</html>
